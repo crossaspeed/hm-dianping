@@ -30,7 +30,7 @@ import static com.hmdp.utils.SystemConstants.USER_NICK_NAME_PREFIX;
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
     @Override
-    public Result sendCoude(String phone, HttpSession session) {
+    public Result sendCode(String phone, HttpSession session) {
         //校验手机号
         if (RegexUtils.isPhoneInvalid(phone)) {
             //如果不符合，返回错误信息
